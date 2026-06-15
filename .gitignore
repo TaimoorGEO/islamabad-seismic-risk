@@ -1,0 +1,15 @@
+# Ignore raw GIS data and heavy folders
+data/
+DATA/
+LULC_Data/
+Precipitation_Data/
+Temperature_Data/
+
+# Ignore heavy spatial file formats anywhere in the project
+*.tif
+*.tiff
+*.shp
+*.gpkg
+*.sqlite
+*.zip
+*.rar
