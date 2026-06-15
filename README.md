@@ -41,12 +41,18 @@ $$\text{Overall Vulnerability} = \text{Fault Risk} + \text{Building Density} + \
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Structure & Pipeline
+
+This repository utilizes a hybrid Python and QGIS pipeline. The final interactive map is deployed as a standalone, monolithic HTML file.
 
 ```text
-├── index.html               # Leaflet/Mapbox WebGIS Application code
-├── assets/
-│   ├── css/                 # Custom styling for dashboard UI overlays
-│   └── data/                # Vector GeoJSON/Topographical payload files
-└── documentation/
-    └── spatial_layers.md    # Deeper breakdown of the QGIS MCE parameters
+├── .gitignore                                 # Git rules excluding heavy raw spatial datasets
+├── 02_density_analysis.ipynb                  # Python pipeline: Structural congestion KDE modeling
+├── 03_fault_buffers.ipynb                     # Python pipeline: Margalla tectonic proximity mapping
+├── 04_vulnerability_index.ipynb               # Python pipeline: Core MCE vulnerability calculation
+├── 05_soil_integration.ipynb                  # Python pipeline: Legacy FAO soil amplification processing
+├── 06_webite_show.ipynb                       # Python pipeline: Standalone HTML map generation
+├── index.html                                 # Live standalone interactive WebGIS dashboard (Deployed)
+├── map_preview.jpg                            # Lightweight static map preview for documentation
+├── qgis_islamabad_vulnerability_index.qgz     # Original QGIS desktop workspace and symbology
+└── README.md                                  # Project documentation and spatial methodology
