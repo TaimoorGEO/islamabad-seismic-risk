@@ -5,7 +5,7 @@
 
 An open-source, macro-level geospatial framework designed to identify and visualize potential seismic vulnerability zones within Islamabad, Pakistan. This project implements a **Multi-Criteria Evaluation (MCE)** model integrated into a lightweight, interactive WebGIS dashboard.
 
-![QGIS Workspace Analysis](image_f13e1c.jpg)
+![QGIS Workspace Analysis](Islamabad_Vulnerability_Map_Initial_2.jpg)
 *Figure 1: Macro-level vulnerability grid processing within the QGIS environment.*
 
 ---
